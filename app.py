@@ -80,10 +80,12 @@ if st.button("Predict"):
       "REFUSED_DAYS_DECISION_MAX": REFUSED_DAYS_DECISION_MAX,
   }
 
-  # Afficher le JSON pour vérification
-  st.write(feature_data)
+  # # Afficher le JSON pour vérification
+  # st.write(feature_data)
+  st.write("Voici la reponse:")
   # Call FastAPI endpoint and get prediction result
   headers = {'Content-Type': 'application/json'}
   response = requests.post(API_URL, json=feature_data)
   # Display prediction result
+  st.write("Voici la prédiction:")
   st.write(f"Prediction: {response}")
