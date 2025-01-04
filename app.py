@@ -82,8 +82,8 @@ if st.button("Predict"):
 
   # Afficher le JSON pour vérification
   st.write(feature_data)
-  # # Call FastAPI endpoint and get prediction result
-  # headers = {'Content-Type': 'application/json'}
-  # response = requests.post(API_URL, json=feature_data)
-  # # Display prediction result
-  # st.write(f"Prediction: {response}")
+  # Call FastAPI endpoint and get prediction result
+  headers = {'Content-Type': 'application/json'}
+  response = requests.post(API_URL, json=feature_data)
+  # Display prediction result
+  st.write(f"Prediction: {response}")
