@@ -1,5 +1,5 @@
 # https://discuss.streamlit.io/t/how-to-launch-streamlit-app-from-google-colab-notebook/42399
-%%writefile app.py
+# %%writefile app.py
 
 import streamlit as st
 import requests
